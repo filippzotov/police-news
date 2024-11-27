@@ -4,7 +4,7 @@ from google.oauth2.service_account import Credentials
 import os
 
 # Path to your service account JSON file
-SERVICE_ACCOUNT_FILE = "mail_sending/chrome-backbone-442409-b7-6ad37d9ca6e1.json"
+SERVICE_ACCOUNT_FILE = "chrome-backbone-442409-b7-6ad37d9ca6e1.json"
 
 # Scopes for the APIs
 SCOPES = [
@@ -55,12 +55,12 @@ def update_google_sheet(sheet_id, csv_file_path, worksheet_name):
 def update_google_sheets():
     # Example usage
     # Existing Google Sheet ID
-    sheet_id = "1c5o3QM_n-3DeenZKAZa0HeTBGcKQ2XYtBrYT3w7JVsM"
-    sheet_id2 = "1pBvCrQqw01KfEw9h9-LAyvYC5p7NJ-dsWQK_0XhQGEc"
-    sheet_id3 = "1OMt07rJLjkT5Eb-y4QKus6e6vcc6N58XQeVOPvzE3uk"
-    # sheet_id = "1wpQO-boMtK4_6BeJ7AXP2pdllu3CNwBaQModjuglIt0"
-    # sheet_id2 = "1EPvNT5L0a5ZgMFC8P9s5AyFLDCxJL7ETrlJdF2NVIqQ"
-    # sheet_id3 = "1Buue4txRSAhy0XlSCpqKqWvzNqvdPucRVbti92aiA5g"
+    # sheet_id = "1c5o3QM_n-3DeenZKAZa0HeTBGcKQ2XYtBrYT3w7JVsM"
+    # sheet_id2 = "1pBvCrQqw01KfEw9h9-LAyvYC5p7NJ-dsWQK_0XhQGEc"
+    # sheet_id3 = "1OMt07rJLjkT5Eb-y4QKus6e6vcc6N58XQeVOPvzE3uk"
+    sheet_id = "1wpQO-boMtK4_6BeJ7AXP2pdllu3CNwBaQModjuglIt0"
+    sheet_id2 = "1EPvNT5L0a5ZgMFC8P9s5AyFLDCxJL7ETrlJdF2NVIqQ"
+    sheet_id3 = "1Buue4txRSAhy0XlSCpqKqWvzNqvdPucRVbti92aiA5g"
 
     # List of CSV files and worksheet names
     csv_files = [

@@ -1,0 +1,12 @@
+services:
+  mail_sending:
+    build:
+      context: ./mail_sending
+    container_name: mail_sending_app
+    restart: unless-stopped
+    volumes:
+      - ./mail_sending:/app
+      - ./mail_sending/chrome-backbone-442409-b7-6ad37d9ca6e1.json:/app/chrome-backbone-442409-b7-6ad37d9ca6e1.json
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python app.py

@@ -161,6 +161,14 @@ def delete_irrelevant_articles_from_files(filenames):
 # Fetch articles from all sources
 def fetch_and_send_articles():
     print(f"Job started at {datetime.now()}")
+    os.makedirs(
+        os.path.dirname("mail_sending/results/newsapi_filtered_results.csv"),
+        exist_ok=True,
+    )
+    os.makedirs(
+        os.path.dirname("gpt/mail_sending/results/newsapi_filtered_results.csv"),
+        exist_ok=True,
+    )
 
     # Fetch articles from different sources
     get_articles_from_perigon()

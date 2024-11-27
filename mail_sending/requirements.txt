@@ -1,0 +1,9 @@
+gspread
+pandas
+google-auth
+schedule
+python-decouple
+openai
+fuzzywuzzy
+requests
+python-dotenv
