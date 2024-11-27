@@ -1,0 +1,18 @@
+# Police News Aggregator
+
+This project contains a script that runs every 24 hours to gather news about police shootings from various news APIs. The collected news articles are then processed and filtered using ChatGPT. The filtered news is stored in a Google Sheets document and an email summary is sent out.
+
+## Features
+
+- Fetches news articles from multiple news APIs.
+- Filters and processes news articles using ChatGPT.
+- Stores filtered news articles in a Google Sheets document.
+- Sends an email summary of the filtered news.
+
+## Requirements
+
+- Python 3.x
+- Google Sheets API credentials
+- Email service credentials
+- News API keys
+- OpenAI API key for ChatGPT
